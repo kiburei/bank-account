@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>CRYPTO BANK</title>
   </head>
@@ -10,15 +12,15 @@
     <h1>Welcome to CRYPTO BANK</h1>
     <div class="customer-new">
       <h2>Regiser New Account</h2>
-      <form action="index.html" method="post">
+      <form id="registration" action="index.html" method="post">
         <div class="form-group">
           <label for="">Name</label>
-          <input class="form-control" type="text" name="" value="" placeholder="Name">
+          <input id="name" class="form-control" type="text" name="" value="" placeholder="Name">
 
           <label for="">Initial Deposit</label>
-          <input class="form-control" type="text" name="" value="" placeholder="Enter amount to deposit"></br>
+          <input id="initDepo" class="form-control" type="text" name="" value="" placeholder="Enter amount to deposit"></br>
 
-          <button class="btn btn-success" type="button" name="button">Create</button>
+          <button class="btn btn-success" name="button">Create</button>
 
         </div>
 
@@ -28,20 +30,20 @@
 
     <div class="transact">
       <h2>Deposite or Withdraw Funds</h2>
-      <form class="" action="index.html" method="post">
+      <form id="deposit" class="" action="index.html" method="post">
         <div class="form-group">
           <label for="">Deposite Amount</label>
-          <input class="form-control" type="text" name="" value="" placeholder="Amount to deposit"></br>
-          <button class="btn btn-success" type="button" name="button">Deposit</button>
+          <input id="cashin" class="form-control" type="text" name="" value="" placeholder="Amount to deposit"></br>
+          <button class="btn btn-success" name="button">Deposit</button>
 
         </div>
       </form>
 
-      <form class="" action="index.html" method="post">
+      <form id="withdraw" class="" action="index.html" method="post">
         <div class="form-group">
           <label for="">Withdraw Amount</label>
-          <input class="form-control" type="text" name="" value="" placeholder="Amount to withdraw"></br>
-          <button class="btn btn-warning" type="button" name="button">Withdraw</button>
+          <input id="cashout" class="form-control" type="text" name="" value="" placeholder="Amount to withdraw"></br>
+          <button class="btn btn-warning" name="button">Withdraw</button>
 
         </div>
       </form>
