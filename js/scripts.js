@@ -4,10 +4,14 @@
 $(document).ready(function() {
   // User registration submit form
   $("#registration").submit(function(event){
-    debugger;
+    // debugger;
     event.preventDefault();
+    var client = [];
     var name = $("#name").val();
     var initDepo = parseInt($("#initDepo").val());
+
+    var client = client.push(new Account(name, initDepo));
+
 
   });
 
@@ -16,6 +20,9 @@ $(document).ready(function() {
     debugger;
     event.preventDefault();
     var deposit = parseInt($("#cashin").val());
+
+    var balance = transactions(deposit);
+    alert("New balance is Kes" + balance);
   });
 
   // Withdraw form
@@ -29,3 +36,20 @@ $(document).ready(function() {
 
 
 //Business Logic
+
+// registration constractor
+function Account(name, amount) {
+  this.name = name;
+  this.initDepo = amount;
+
+};
+
+//handle transactions
+
+Account.prototype.transactions = function(amount) {
+  var bal = this.initDepo + deposit;
+
+  return bal;
+
+
+}
