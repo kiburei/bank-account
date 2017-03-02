@@ -1,0 +1,17 @@
+body {
+  padding: 150px;
+
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.transact {
+  float: right;
+}
+
+.customer-new {
+  float: left;;
+}
